@@ -1,6 +1,6 @@
 <template>
   <div>
-    Hola
-
+    <NavBar />
+    <LogoComponents />
   </div>
 </template>
