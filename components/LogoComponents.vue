@@ -3,9 +3,7 @@
 </script>
 
 <template>
-  <div>
-    Logo
-  </div>
+  <div class="text-center text-4xl font-bold">Logo</div>
 </template>
 
 <style></style>

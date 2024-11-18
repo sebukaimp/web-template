@@ -1,8 +1,7 @@
 <template>
-
-  <div class="w-full flex justify-between px-5 text-2xl">
-    <LogoComponents />
+  <div>
     <NavBar />
+    <BannerComponents></BannerComponents>
+    <HeroComponents></HeroComponents>
   </div>
-
 </template>
