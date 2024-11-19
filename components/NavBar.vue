@@ -14,12 +14,13 @@
     </div>
     <LogoComponents />
     <div>
-      <div class="flex space-x-10">
+      <div class="flex space-x-10 ">
         <div>Menu5</div>
         <div>Menu6</div>
         <div>Menu7</div>
-
+        <UIcon name="uiw:heart-off"></UIcon>
       </div>
+
 
     </div>
   </div>
