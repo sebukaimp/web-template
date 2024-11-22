@@ -13,7 +13,7 @@
 
     </div>
     <LogoComponents />
-    <div class="ml-10">
+    <div dir="me-10">
       <USelect icon="i-heroicons-magnifying-glass-20-solid" color="white" size="xs" placeholder="Search..." />
     </div>
     <div>

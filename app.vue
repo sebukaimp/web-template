@@ -1,7 +1,10 @@
 <template>
+
+
+
   <div>
     <NavBar />
     <BannerComponents></BannerComponents>
-    <HeroComponents></HeroComponents>
+    <NuxtPage></NuxtPage>
   </div>
 </template>

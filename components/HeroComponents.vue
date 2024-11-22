@@ -26,12 +26,12 @@
     <div class=" bg-gradient-to-r from-violet-500 mx-10 font-serif  pl-5 rounded-lg text-white pt-40  font-extralight">
       Lorem
       ipsum,dolor sit
-      <div class="font-bold">Lorem ipsum dolor ametconsectetur adipisicing elit.</div>
+      <div class="font-bold">Lorem ipsum dolor ametconsectetur adipisicing elit. SECCION1</div>
     </div>
     <div class="bg-gradient-to-r from-pink-500 mx-10 p font-serif rounded-lg pl-5 text-white pt-40 font-extralight">
       Lorem
       ipsum,
-      <div class="font-bold">Lorem ipsum dolor dolors itamet consectetur adipisicing elit</div>
+      <div class="font-bold">Lorem ipsum dolor dolors itamet consectetur adipisicing elit. SECCION"</div>
     </div>
   </div>
   <!-- BOTON INFORMACION -->
