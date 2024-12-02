@@ -13,8 +13,8 @@ const leftMenuItems: MenuItem[] = [
 ];
 
 const rightMenuItems: MenuItem[] = [
-  { id: 5, label: 'Menu5', path: '/menu5' },
-  { id: 6, label: 'Menu6', path: '/menu6' },
+  { id: 5, label: 'Registro Usuarios', path: '/register-user' },
+  { id: 6, label: 'Registro Empresas', path: '/register-empresa' },
 ];
 
 const iconItems: MenuItem[] = [
@@ -68,103 +68,57 @@ const toggleDarkMode = () => {
 
         <!-- Desktop Menu - Left -->
         <div class="hidden space-x-8 lg:flex">
-          <NuxtLink
-            v-for="item in leftMenuItems"
-            :key="item.id"
-            :to="item.path"
-            class="transition-colors text-label-large text-content-secondary hover:text-content-primary"
-          >
+          <NuxtLink v-for="item in leftMenuItems" :key="item.id" :to="item.path"
+            class="transition-colors text-label-large text-content-secondary hover:text-content-primary">
             {{ item.label }}
           </NuxtLink>
         </div>
 
         <!-- Search Bar - Desktop -->
         <div class="flex-1 hidden max-w-xs mx-8 lg:block">
-          <USelect
-            icon="i-heroicons-magnifying-glass-20-solid"
-            color="gray"
-            size="sm"
-            placeholder="Search..."
-            class="bg-surface-secondary"
-          />
+          <USelect icon="i-heroicons-magnifying-glass-20-solid" color="gray" size="sm" placeholder="Search..."
+            class="bg-surface-secondary" />
         </div>
 
         <!-- Desktop Menu - Right -->
         <div class="items-center hidden space-x-8 lg:flex">
-          <NuxtLink
-            v-for="item in rightMenuItems"
-            :key="item.id"
-            :to="item.path"
-            class="transition-colors text-label-large text-content-secondary hover:text-content-primary"
-          >
+          <NuxtLink v-for="item in rightMenuItems" :key="item.id" :to="item.path"
+            class="transition-colors text-label-large text-content-secondary hover:text-content-primary">
             {{ item.label }}
           </NuxtLink>
 
           <!-- Icons -->
-          <NuxtLink
-            v-for="item in iconItems"
-            :key="item.id"
-            :to="item.path"
-            class="transition-colors text-content-secondary hover:text-content-primary"
-            :title="item.label"
-          >
+          <NuxtLink v-for="item in iconItems" :key="item.id" :to="item.path"
+            class="transition-colors text-content-secondary hover:text-content-primary" :title="item.label">
             <UIcon v-if="item.icon" :name="item.icon" class="w-5 h-5" />
           </NuxtLink>
 
           <!-- Dark Mode Toggle -->
-          <UButton
-            color="gray"
-            variant="ghost"
-            :icon="isDark ? 'i-heroicons-sun-20-solid' : 'i-heroicons-moon-20-solid'"
-            @click="toggleDarkMode"
-          />
+          <UButton color="gray" variant="ghost"
+            :icon="isDark ? 'i-heroicons-sun-20-solid' : 'i-heroicons-moon-20-solid'" @click="toggleDarkMode" />
         </div>
 
         <!-- Mobile Navigation -->
         <div class="flex items-center space-x-4 lg:hidden">
           <!-- Mobile Search Toggle -->
-          <UButton
-            color="gray"
-            variant="ghost"
-            icon="i-heroicons-magnifying-glass-20-solid"
-            @click="toggleSearch"
-          />
+          <UButton color="gray" variant="ghost" icon="i-heroicons-magnifying-glass-20-solid" @click="toggleSearch" />
 
           <!-- Dark Mode Toggle - Mobile -->
-          <UButton
-            color="gray"
-            variant="ghost"
-            :icon="isDark ? 'i-heroicons-sun-20-solid' : 'i-heroicons-moon-20-solid'"
-            @click="toggleDarkMode"
-          />
+          <UButton color="gray" variant="ghost"
+            :icon="isDark ? 'i-heroicons-sun-20-solid' : 'i-heroicons-moon-20-solid'" @click="toggleDarkMode" />
 
           <!-- Mobile Menu Dropdown -->
-          <UDropdown
-            :items="mobileMenuItems"
-            :popper="{ placement: 'bottom-end' }"
-            class="border bg-surface-primary border-surface-tertiary"
-          >
-            <UButton
-              color="gray"
-              variant="ghost"
-              icon="i-heroicons-bars-3-20-solid"
-            />
+          <UDropdown :items="mobileMenuItems" :popper="{ placement: 'bottom-end' }"
+            class="border bg-surface-primary border-surface-tertiary">
+            <UButton color="gray" variant="ghost" icon="i-heroicons-bars-3-20-solid" />
           </UDropdown>
         </div>
       </div>
 
       <!-- Mobile Search Bar - Expandable -->
-      <div
-        v-show="isSearchOpen"
-        class="px-4 pb-4 lg:hidden"
-      >
-        <USelect
-          icon="i-heroicons-magnifying-glass-20-solid"
-          color="gray"
-          size="sm"
-          placeholder="Search..."
-          class="bg-surface-secondary"
-        />
+      <div v-show="isSearchOpen" class="px-4 pb-4 lg:hidden">
+        <USelect icon="i-heroicons-magnifying-glass-20-solid" color="gray" size="sm" placeholder="Search..."
+          class="bg-surface-secondary" />
       </div>
     </nav>
   </div>
