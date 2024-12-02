@@ -9,7 +9,7 @@ interface MenuItem {
 const leftMenuItems: MenuItem[] = [
   { id: 1, label: 'Blog', path: '/blog' },
   { id: 2, label: 'Users', path: '/users' },
-  { id: 3, label: 'Layouts', path: '/layouts' },
+  { id: 3, label: 'Gestión de Bonos', path: '/gestion-bonos' },
 ];
 
 const rightMenuItems: MenuItem[] = [
