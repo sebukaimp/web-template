@@ -29,7 +29,9 @@ const sections: Section[] = [
   <div class="py-10 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <!-- Título -->
-      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Llamadas a la acción</h2>
+      <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">¿Quién eres?
+
+      </h2>
 
       <!-- Contenedor de tarjetas -->
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
