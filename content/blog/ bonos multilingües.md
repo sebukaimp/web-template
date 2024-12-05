@@ -44,3 +44,7 @@ El equipo ha liderado con éxito el lanzamiento de **ocho plataformas de bonos a
 ---
 
 Estas plataformas representan un **gran avance en la modernización de servicios públicos digitales** y han establecido un estándar para futuros proyectos similares. Además, el éxito de esta iniciativa abre la puerta a nuevas colaboraciones con otros gobiernos interesados en implementar soluciones similares en sus regiones.
+
+
+
+![Plataformas de Bonos al Consumo](/images/plataformas-bonos.png)
