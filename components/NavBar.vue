@@ -64,7 +64,7 @@ const toggleDarkMode = () => {
     <nav class="mx-auto max-w-7xl">
       <div class="flex items-center justify-between px-4 py-4 lg:px-8">
         <!-- Logo -->
-        <LogoComponents class="flex-shrink-0" />
+        <LogoComponents class="flex-shrink-0 pr-4" />
 
         <!-- Desktop Menu - Left -->
         <div class="hidden space-x-8 lg:flex">
