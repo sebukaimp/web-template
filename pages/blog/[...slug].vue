@@ -8,7 +8,9 @@
 <template>
 
   <main class="p-10">
-    <div class="bg-pink-50 flex justify-normal">
+    <div class="bg-pink-50 flex justify-normal
+    
+    ">
       <div class="prose">
         <ContentDoc />
       </div>

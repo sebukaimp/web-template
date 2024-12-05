@@ -1,2 +1,2 @@
- # 2 Implementación de una solución de búsqueda personalizada y rentable
+ #  Implementación de una solución de búsqueda personalizada y rentable
 Diseñé e implementé un motor de búsqueda personalizado para la localización de establecimientos asociados a los bonos al consumo, reemplazando de manera efectiva el costoso motor Algolia. Esta solución redujo los costos operativos y mejoró la eficiencia de búsqueda.
