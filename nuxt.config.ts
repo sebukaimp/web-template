@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     '@nuxt/ui',
     '@nuxt/image',
     'nuxt-mapbox',
-    '@nuxt/content'
+    '@nuxt/content',
+
   ]
 })

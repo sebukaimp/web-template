@@ -7,9 +7,11 @@
 
 <template>
 
-  <main class=" p-10 grid-cols-2">
-    <div class="prose">
-      <ContentDoc />
+  <main class="p-10">
+    <div class="bg-pink-50 flex justify-normal">
+      <div class="prose">
+        <ContentDoc />
+      </div>
     </div>
   </main>
   <div class=" text-center bg-slate-300 p-10">

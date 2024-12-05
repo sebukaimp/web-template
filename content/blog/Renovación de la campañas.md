@@ -1,0 +1,2 @@
+# 3 Renovación de la campaña "Mágicas Navidades"
+Lideré el exitoso rediseño y relanzamiento de la campaña "Mágicas Navidades", asegurando una ejecución impecable y una consolidación efectiva de la plataforma.#
