@@ -58,7 +58,6 @@ const toggleDarkMode = () => {
   colorMode.preference = isDark.value ? 'light' : 'dark';
 };
 </script>
-
 <template>
   <div class="sticky top-0 z-50 border-b bg-surface-primary/80 backdrop-blur-sm border-surface-tertiary/50">
     <nav class="mx-auto max-w-7xl">
@@ -124,13 +123,7 @@ const toggleDarkMode = () => {
   </div>
 </template>
 
-<style scoped>
-.router-link-active {
-  @apply text-content-primary font-semibold;
-}
+<style></style>
 
-/* Add smooth transitions */
-.backdrop-blur-sm {
-  @apply transition-all duration-200;
-}
-</style>
+
+<style></style>

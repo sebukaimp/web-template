@@ -27,3 +27,10 @@
     --surface-tertiary: 55 65 81;     /* gray-700 */
   }
 }
+
+@layer components {
+  .text-content-primary {
+    color: var(--content-primary, #1a1a1a);
+  }
+}
+
