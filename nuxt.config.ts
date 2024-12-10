@@ -10,6 +10,8 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/content',
     '@pinia/nuxt',
+    '@nuxtjs/i18n',
+    '@nuxtjs/i18n'
   ],
 
 
