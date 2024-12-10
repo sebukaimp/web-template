@@ -2,52 +2,54 @@
 </script>
 
 <template>
-  <div class="p-10 bg-gray-100 min-h-screen">
+  <div class="p-10 bg-gradient-to-r from-blue-50 via-blue-100 to-blue-200 min-h-screen">
     <!-- Sección principal con imagen y contenido -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 bg-white p-8 rounded-lg shadow-lg">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 bg-white p-10 rounded-3xl shadow-xl">
       <!-- Imagen -->
-      <div class="h-96 bg-blue-100 rounded-xl flex items-center justify-center">
-        <span class="text-blue-500 text-lg font-semibold">Imagen Aquí</span>
+      <div
+        class="h-96 bg-gradient-to-br from-blue-400 to-blue-600 rounded-3xl flex items-center justify-center shadow-lg">
+        <span class="text-white text-2xl font-semibold tracking-wider drop-shadow-lg">Imagen de Usuarios</span>
       </div>
       <!-- Contenido -->
       <div class="flex flex-col justify-center">
-        <h1 class="text-center font-serif text-4xl mb-6 text-blue-700">Usuarios</h1>
-        <p class="text-justify px-4 mb-6 text-gray-600">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, eaque itaque, obcaecati velit,
-          similique nam alias quos sequi hic aliquid enim accusantium. Quod possimus itaque, similique voluptates
-          exercitationem neque numquam.
+        <h1 class="text-center font-serif text-5xl mb-6 text-blue-700 drop-shadow-md">
+          Usuarios
+        </h1>
+        <p class="text-justify px-6 mb-6 text-gray-600 leading-relaxed text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at neque risus. Sed vel dui dignissim,
+          tempor ipsum eget, fringilla ligula. Nulla facilisi. Fusce auctor varius ligula, ac fermentum nisl laoreet
+          sed.
         </p>
-        <div class="flex justify-center space-x-4">
+        <div class="flex justify-center space-x-6">
           <button
-            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded shadow-md transform hover:scale-105 transition">
-            Botón 1
+            class="bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-700 hover:to-blue-500 text-white font-bold py-3 px-10 rounded-full shadow-lg transform hover:scale-105 transition">
+            Ver Detalles
           </button>
           <button
-            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-8 rounded shadow-md transform hover:scale-105 transition">
-            Botón 2
+            class="bg-gradient-to-r from-blue-700 to-blue-500 hover:from-blue-500 hover:to-blue-700 text-white font-bold py-3 px-10 rounded-full shadow-lg transform hover:scale-105 transition">
+            Más Opciones
           </button>
         </div>
       </div>
     </div>
 
     <!-- Sección adicional -->
-    <div class="text-center mt-12">
-      <h3 class="text-2xl font-serif text-gray-700 leading-relaxed">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem quod
-        cumque dicta accusamus aperiam quam ea culpa voluptatibus dolores corrupti
-        impedit magni, excepturi praesentium ipsa doloremque quaerat dignissimos vel?
+    <div class="text-center mt-16">
+      <h3 class="text-3xl font-serif text-gray-800 leading-relaxed">
+        Explore nuestros usuarios y descubra cómo mejoramos su experiencia. Comprometidos con la calidad y
+        el servicio, trabajamos para ofrecerle siempre lo mejor.
       </h3>
     </div>
   </div>
 </template>
 
 <style>
-/* Botones con animaciones suaves */
+/* Estilos generales */
 button {
   transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
 }
 </style>
