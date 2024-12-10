@@ -5,11 +5,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@nuxt/fonts',
+    '@pinia/nuxt',
     '@nuxt/ui',
     '@nuxt/image',
-    'nuxt-mapbox',
     '@nuxt/content',
-    '@nuxtjs/fontaine'
   ],
 
 
