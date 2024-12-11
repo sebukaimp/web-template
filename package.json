@@ -26,6 +26,7 @@
   "devDependencies": {
     "@nuxtjs/fontaine": "^0.4.4",
     "@tailwindcss/typography": "^0.5.15",
-    "tailwindcss": "^3.4.15"
+    "tailwindcss": "^3.4.15",
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge"
   }
 }

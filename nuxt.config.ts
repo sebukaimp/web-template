@@ -11,10 +11,16 @@ export default defineNuxtConfig({
     '@nuxt/content',
     '@pinia/nuxt',
     '@nuxtjs/i18n',
-    '@nuxtjs/i18n'
+
   ],
-
-
-
-
+  i18n: {
+    defaultLocale: 'es',
+    lazy: true,
+    langDir: 'locales/',
+    locales: [
+      { code: 'en', name: 'English', file: 'en.json' },
+      { code: 'es', name: 'Español', file: 'es.json' },
+      { code: 'fr', name: 'Français', file: 'fr.json' }
+    ]
+  }
 })
