@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useI18n } from '#i18n'
+const { t } = useI18n()
 interface HeroProps {
   title: string
   subtitle: string
@@ -31,14 +33,14 @@ const props = withDefaults(defineProps<HeroProps>(), {
       <div class="flex flex-col justify-center h-full py-20 space-y-8">
         <!-- Hero Text -->
         <div class="max-w-3xl">
-          <h1 class="mb-4 font-bold tracking-tight text-display-large text-surface-primary" v-text="title" />
-          <p class="text-heading-medium text-surface-primary/90" v-text="subtitle" />
+          <h1 class="mb-4 font-bold tracking-tight text-display-large text-surface-primary" v-text="t(title)" />
+          <p class="text-heading-medium text-surface-primary/90" v-text="t(subtitle)" />
         </div>
 
         <!-- Hero Button -->
         <div>
           <UButton :to="buttonLink" size="xl" color="white" variant="solid" class="px-8 rounded-full">
-            {{ buttonText }}
+            {{ t(buttonText) }}
             <UIcon name="i-heroicons-arrow-right-20-solid" class="ml-2" />
           </UButton>
         </div>

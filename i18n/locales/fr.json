@@ -1,7 +1,27 @@
 {
-    "navbar": {
-        "Logo": "Logo",
-        "Blog": "Blog",
-        "usuarios": "Utilisateurs"
-    }
+    "hero": {
+        "title": "Transformez votre expérience numérique",
+        "subtitle": "Créez des interfaces étonnantes avec notre système de conception moderne",
+        "buttonText": "Commencer"
+    },
+    "section": {
+        "establecimiento": {
+            "title": "Je suis un établissement",
+            "description": "Inscrivez-vous et commencez à offrir vos services à plus de clients."
+        },
+        "cliente": {
+            "title": "Je suis un client/utilisateur",
+            "description": "Trouvez des établissements qui offrent ce dont vous avez besoin."
+        }
+    },
+    "subtitle": "Créez des interfaces étonnantes avec notre système de conception moderne",
+    "buttonText": "Commencer",
+    "Blog": "Blog",
+    "Users": "Utilisateurs",
+    "Gestion de Bonos": "Gestion des bonus",
+    "Registro Usuarios": "Enregistrement des utilisateurs",
+    "Registro Empresas": "Enregistrement des entreprises",
+    "title": "Je suis un établissement",
+    "description": "Inscrivez-vous et commencez à offrir vos services à plus de clients.",
+    "¿Quién eres?": "Qui êtes-vous?"
 }

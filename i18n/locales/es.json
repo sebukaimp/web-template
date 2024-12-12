@@ -1,7 +1,25 @@
 {
     "hero": {
-        "title": "Transforma tu experiencia digital",
-        "subtitle": "Crea interfaces asombrosas con nuestro sistema de diseño moderno",
-        "buttonText": "Empezar"
-    }
+        "title": "Transforma tu experiencia digital"
+    },
+    "section": {
+        "establecimiento": {
+            "title": "Soy establecimiento",
+            "description": "Regístrate y comienza a ofrecer tus servicios a más clientes."
+        },
+        "cliente": {
+            "title": "Soy cliente/usuario",
+            "description": "Encuentra establecimientos que ofrecen lo que necesitas."
+        }
+    },
+    "subtitle": "Crea interfaces asombrosas con nuestro sistema de diseño moderno",
+    "buttonText": "Empezar",
+    "Blog": "Blog",
+    "Users": "Usuarios",
+    "Gestión de Bonos": "Gestión de bonos",
+    "Registro Usuarios": "Registro usuarios",
+    "Registro Empresas": "Registro empresas",
+    "title": "Soy establecimiento",
+    "description": "Regístrate y comienza a ofrecer tus servicios a más clientes.",
+    "¿Quién eres?": "¿Quién eres?"
 }

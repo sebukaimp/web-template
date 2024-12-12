@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 import { useMenuStore } from '@/stores/menu'; // Importamos el store
+import { useI18n } from '#i18n'
+const { t } = useI18n()
 
 // Accedemos al store
 const menuStore = useMenuStore();
@@ -30,7 +32,7 @@ const toggleDarkMode = menuStore.toggleDarkMode;
         <div class="hidden space-x-8 lg:flex">
           <NuxtLink v-for="item in leftMenuItems" :key="item.id" :to="item.path"
             class="transition-colors text-label-large text-content-secondary hover:text-content-primary">
-            {{ item.label }}
+            {{ t(item.label) }}
           </NuxtLink>
         </div>
 
@@ -44,7 +46,7 @@ const toggleDarkMode = menuStore.toggleDarkMode;
         <div class="items-center hidden space-x-8 lg:flex">
           <NuxtLink v-for="item in rightMenuItems" :key="item.id" :to="item.path"
             class="transition-colors text-label-large text-content-secondary hover:text-content-primary">
-            {{ item.label }}
+            {{ t(item.label) }}
           </NuxtLink>
 
           <!-- Icons -->

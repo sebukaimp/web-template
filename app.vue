@@ -1,6 +1,7 @@
 <script setup>
 import NavBar from './components/NavBar.vue';
-
+import { useI18n } from '#i18n'
+const { t } = useI18n()
 </script>
 
 
@@ -11,6 +12,8 @@ import NavBar from './components/NavBar.vue';
   </head>
 
   <div>
+
+
     <NavBar />
     <NuxtPage></NuxtPage>
     <FooterComponents></FooterComponents>

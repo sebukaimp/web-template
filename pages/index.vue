@@ -1,7 +1,14 @@
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useI18n } from '#i18n'
-const { t } = useI18n()
+
+const { locale, locales, setLocale, t } = useI18n()
+const switchLocalePath = useSwitchLocalePath()
+const availableLocales = computed(() => {
+  return locales.value.filter(l => l.code !== locale.value)
+})
+
+
 
 const heroContent = {
   title: 'Transform your digital experience',
@@ -12,33 +19,22 @@ const heroContent = {
 }
 
 
-const { locale, locales, setLocale } = useI18n()
-const switchLocalePath = useSwitchLocalePath()
-const availableLocales = computed(() => {
-  return locales.value.filter(l => l.code !== locale.value)
-})
 
 </script>
 <template>
+
   <div>
-    <h1>{{ $t('welcome') }}</h1>
-    <div>
-      <!-- Conmutador de idioma -->
-      <span>Idioma actual: {{ locale }}</span>
-      <ul>
+    <div class="w-full max-w-6xl mx-auto">
+      <ul class="flex space-x-4 justify-end">
         <li v-for="l in availableLocales" :key="l.code">
           <nuxt-link :to="switchLocalePath(l.code)">
-            {{ l.name }}
+            {{ t(l.name) }}
           </nuxt-link>
         </li>
       </ul>
     </div>
-    <p>{{ $t('about') }}</p>
-
-    <main>
-      <!-- Hero Section -->
-      <BannerComponents :message="$t('hero.title')" type="announcement" :link="{ text: $t('about'), url: '/users' }" />
-    </main>
+    <!-- Hero Section -->
+    <BannerComponents :message="t('hero.title')" type="announcement" :link="{ text: t('about'), url: '/users' }" />
     <HeroComponent v-bind="heroContent" />
     <SectionGrid />
   </div>

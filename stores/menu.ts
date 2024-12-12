@@ -1,7 +1,6 @@
 import { defineStore } from 'pinia';
 import { ref, computed } from 'vue';
 
-
 export const useMenuStore = defineStore('menu', () => {
   const leftMenuItems = ref([
     { id: 1, label: 'Blog', path: '/blog' },

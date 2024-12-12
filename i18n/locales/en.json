@@ -3,5 +3,25 @@
         "title": "Transform your digital experience",
         "subtitle": "Create stunning interfaces with our modern design system",
         "buttonText": "Get Started"
-    }
+    },
+    "section": {
+        "establecimiento": {
+            "title": "I am an establishment",
+            "description": "Register and start offering your services to more customers."
+        },
+        "cliente": {
+            "title": "I am a customer/user",
+            "description": "Find establishments that offer what you need."
+        }
+    },
+    "subtitle": "Create stunning interfaces with our modern design system",
+    "buttonText": "Get Started",
+    "Blog": "Blog",
+    "Users": "Users",
+    "Gestión de Bonos": "Bonus Management",
+    "Registro Usuarios": "User Registration",
+    "Registro Empresas": "Company Registration",
+    "title": "I am an establishment",
+    "description": "Register and start offering your services to more customers.",
+    "¿Quién eres?": "Who are you?"
 }
