@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import { useI18n } from '#i18n'
+const { t } = useI18n()
+
 
 </script>
 
@@ -7,35 +10,34 @@
     <div class="container mx-auto text-center space-y-6">
       <!-- Información sobre la página -->
       <div>
-        <h2 class="text-xl font-bold text-gray-100">Bonos App</h2>
+        <h2 class="text-xl font-bold text-gray-100">{{ t('Bonos App') }}</h2>
         <p class="text-sm max-w-lg mx-auto">
-          Descubre y compara los mejores bonos del mercado. Encuentra las opciones que mejor se adapten a tus
-          necesidades.
+          {{ t('texto01') }}
         </p>
       </div>
 
       <!-- Enlaces útiles -->
       <div>
-        <h2 class="text-lg font-bold text-gray-100 mb-3">Enlaces útiles</h2>
+        <h2 class="text-lg font-bold text-gray-100 mb-3">{{ t('enlaces utiles') }}</h2>
         <ul class="flex justify-center space-x-6 text-sm">
           <li>
-            <NuxtLink to="/" class="hover:text-blue-400 transition">Inicio</NuxtLink>
+            <NuxtLink to="/" class="hover:text-blue-400 transition">{{ t('Inicio') }}</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/bonos" class="hover:text-blue-400 transition">Bonos</NuxtLink>
+            <NuxtLink to="/bonos" class="hover:text-blue-400 transition">{{ t('Bonos') }}</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/faq" class="hover:text-blue-400 transition">Preguntas frecuentes</NuxtLink>
+            <NuxtLink to="/faq" class="hover:text-blue-400 transition">{{ t('faq') }}</NuxtLink>
           </li>
           <li>
-            <NuxtLink to="/contacto" class="hover:text-blue-400 transition">Contacto</NuxtLink>
+            <NuxtLink to="/contacto" class="hover:text-blue-400 transition">{{ t('contacto') }}</NuxtLink>
           </li>
         </ul>
       </div>
 
       <!-- Redes sociales -->
       <div>
-        <h2 class="text-lg font-bold text-gray-100 mb-3">Síguenos</h2>
+        <h2 class="text-lg font-bold text-gray-100 mb-3">{{ t('Siguenos') }}</h2>
         <div class="flex justify-center space-x-6">
           <a href="#" class="hover:text-blue-400 transition">
             <span class="sr-only">Facebook</span>
@@ -58,14 +60,8 @@
 
       <!-- Derechos reservados -->
       <div class="text-xs text-gray-500">
-        © 2024 Bonos App. Todos los derechos reservados.
+        © 2024 Bonos App. {{ t('rights_reserved') }}
       </div>
     </div>
   </footer>
 </template>
-
-<script>
-export default {
-  name: "Footer",
-};
-</script>
