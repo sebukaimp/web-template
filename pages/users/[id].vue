@@ -1,6 +1,11 @@
 <script lang="ts" setup>
 import { ref, onMounted } from 'vue';
 import { useRoute, useRouter } from 'vue-router';
+import { useI18n } from 'vue-i18n';
+
+
+const { t } = useI18n();
+
 
 // Definir la interfaz para los usuarios
 interface UserType {
@@ -54,16 +59,13 @@ onMounted(fetchUserDetails);
 <template>
   <div class="min-h-screen bg-gray-100">
     <div class="p-10">
-      <button
-        @click="router.push('/users')"
-        class="px-4 py-2 text-white bg-blue-500 rounded shadow hover:bg-blue-600"
-      >
-        Volver a Usuarios
+      <button @click="router.push('/users')" class="px-4 py-2 text-white bg-blue-500 rounded shadow hover:bg-blue-600">
+        {{ t('volver_a_usuarios') }}
       </button>
     </div>
 
     <div v-if="loading" class="text-center text-gray-500">
-      <p>Cargando detalles del usuario...</p>
+      <p>{{ t('cargando') }}</p>
     </div>
 
     <div v-if="error" class="text-center text-red-500">
@@ -71,14 +73,19 @@ onMounted(fetchUserDetails);
     </div>
 
     <div v-if="!loading && user" class="max-w-4xl p-6 mx-auto bg-white rounded-lg shadow">
-      <h1 class="text-2xl font-bold text-gray-800">{{ user.name }}</h1>
-      <p class="text-sm text-gray-600">Usuario: {{ user.username }}</p>
-      <p class="text-sm text-gray-600">Email: {{ user.email }}</p>
-      <p class="text-sm text-gray-600">Teléfono: {{ user.phone }}</p>
-      <p class="text-sm text-gray-600">Website: <a :href="'http://' + user.website" class="text-blue-500 underline">{{ user.website }}</a></p>
-      <p class="mt-4 text-sm text-gray-500">
-        Dirección: {{ user.address.street }}, {{ user.address.city }} ({{ user.address.zipcode }})
+      <p class="text-sm text-gray-600">{{ t('usuario') }}: {{ user.username }}</p>
+      <p class="text-sm text-gray-600">{{ t('correo_electronico') }}: {{ user.email }}</p>
+      <p class="text-sm text-gray-600">{{ t('telefono') }}: {{ user.phone }}</p>
+      <p class="text-sm text-gray-600">
+        {{ t('sitio_web') }}:
+        <a :href="'http://' + user.website" class="text-blue-500 underline">
+          {{ user.website }}
+        </a>
       </p>
+      <p class="mt-4 text-sm text-gray-500">
+        {{ t('direccion') }}: {{ user.address.street }}, {{ user.address.city }} {{ user.address.zipcode }}
+      </p>
+
     </div>
   </div>
 </template>

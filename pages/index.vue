@@ -25,6 +25,9 @@ const heroContent = {
 
   <div>
     <div class="w-full max-w-6xl mx-auto">
+
+
+
       <ul class="flex space-x-4 justify-end">
         <li v-for="l in availableLocales" :key="l.code">
           <nuxt-link :to="switchLocalePath(l.code)">
@@ -35,6 +38,7 @@ const heroContent = {
     </div>
     <!-- Hero Section -->
     <BannerComponents :message="t('hero.title')" type="announcement" :link="{ text: t('about'), url: '/users' }" />
+
     <HeroComponent v-bind="heroContent" />
     <SectionGrid />
   </div>

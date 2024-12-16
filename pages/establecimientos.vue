@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
 </script>
 
 <template>
@@ -8,26 +11,25 @@
       <!-- Imagen -->
       <div
         class="h-96 bg-gradient-to-br from-green-400 to-yellow-400 rounded-3xl flex items-center justify-center shadow-lg">
-        <span class="text-white text-2xl font-semibold tracking-wider drop-shadow-lg">Imagen de Establecimientos</span>
+        <span class="text-white text-2xl font-semibold tracking-wider drop-shadow-lg">{{ t('imagenEstablecimientos')
+          }}</span>
       </div>
       <!-- Contenido -->
       <div class="flex flex-col justify-center">
         <h1 class="text-center font-serif text-5xl mb-6 text-green-700 drop-shadow-md">
-          Establecimientos
+          {{ t('establecimientos') }}
         </h1>
         <p class="text-justify px-6 mb-6 text-gray-600 leading-relaxed text-lg">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at neque risus. Sed vel dui dignissim,
-          tempor ipsum eget, fringilla ligula. Nulla facilisi. Fusce auctor varius ligula, ac fermentum nisl laoreet
-          sed.
+          {{ t('descripcion') }}
         </p>
         <div class="flex justify-center space-x-6">
           <button
             class="bg-gradient-to-r from-green-500 to-yellow-500 hover:from-yellow-500 hover:to-green-500 text-white font-bold py-3 px-10 rounded-full shadow-lg transform hover:scale-105 transition">
-            Ver Detalles
+            {{ t('verDetalles') }}
           </button>
           <button
             class="bg-gradient-to-r from-yellow-500 to-green-500 hover:from-green-500 hover:to-yellow-500 text-white font-bold py-3 px-10 rounded-full shadow-lg transform hover:scale-105 transition">
-            Más Opciones
+            {{ t('masOpciones') }}
           </button>
         </div>
       </div>
@@ -36,8 +38,7 @@
     <!-- Sección adicional -->
     <div class="text-center mt-16">
       <h3 class="text-3xl font-serif text-gray-800 leading-relaxed">
-        Explore nuestros establecimientos y descubra cómo mejoramos su experiencia. Comprometidos con la calidad y
-        el servicio, trabajamos para ofrecerle siempre lo mejor.
+        {{ t('explorar') }}
       </h3>
     </div>
   </div>
