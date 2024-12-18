@@ -32,6 +32,9 @@ const { t } = useI18n()
           <li>
             <NuxtLink to="/contacto" class="hover:text-blue-400 transition">{{ t('contacto') }}</NuxtLink>
           </li>
+          <li>
+            <NuxtLink to="/bono/[bonoId].vue" class="hover:text-blue-400 transition">{{ t('Bonos') }}</NuxtLink>
+          </li>
         </ul>
       </div>
 
