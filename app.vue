@@ -2,6 +2,12 @@
 import NavBar from './components/NavBar.vue';
 import { useI18n } from '#i18n'
 const { t } = useI18n()
+import { useBonosStore } from '~/stores/useBonos'
+const bonosStore = useBonosStore()
+
+bonosStore.getBono()
+
+
 </script>
 
 
@@ -17,5 +23,10 @@ const { t } = useI18n()
     <NavBar />
     <NuxtPage></NuxtPage>
     <FooterComponents></FooterComponents>
+    <UButton @click="bonosStore.getBono('es')">Get Bono</UButton>
+    <!-- <pre>
+    {{ bonosStore.bonoId }}
+    {{ bonosStore.bonoData }}
+    </pre> -->
   </div>
 </template>

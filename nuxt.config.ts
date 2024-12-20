@@ -18,10 +18,13 @@ export default defineNuxtConfig({
     lazy: true,
     langDir: 'locales/',
     strategy: 'prefix',
-    locales: [
-      { code: 'en', name: 'English', file: 'en.json' },
-      { code: 'es', name: 'Español', file: 'es.json' },
-      { code: 'fr', name: 'Français', file: 'fr.json' }
-    ]
+    // locales: [
+    //   { code: 'en', name: 'English', file: 'en.json' },
+    //   { code: 'ca', name: 'Català', file: 'ca.json' },
+    //   { code: 'eu', name: 'Euskara', file: 'eu.json' },
+    //   { code: 'es', name: 'Español', file: 'es.json' },
+    //   { code: 'fr', name: 'Français', file: 'fr.json' }
+    // ],
+     vueI18n: './i18n.config.ts'
   }
 })

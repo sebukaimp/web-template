@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div>
+  <div class="relative">
     <!-- Versión de escritorio -->
     <div class="absolute right-0 z-30 items-center hidden px-5 mt-1 text-right md:flex lg:px-2">
       <a href="/es/admin"

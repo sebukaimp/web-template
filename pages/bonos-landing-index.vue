@@ -10,7 +10,7 @@ import BonoPasosLista from '@/components/BonoPasosLista.vue';
 
 
 <template>
-  <div class="w-full">
+  <div class="w-full mx-auto max-w-7xl">
     <BonoHeader />
     <div class="mx-auto home child-view">
       <BonoBanner />

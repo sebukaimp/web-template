@@ -1,16 +1,19 @@
 <script lang="ts" setup>
+import { useBonosStore } from '~/stores/useBonos'
+const bonosStore = useBonosStore()
+
 
 </script>
 <template>
   <div>
     <!-- Imagen para escritorio -->
-    <div class="flex-col justify-start hidden mt-20 md:flex">
-      <img src="https://cdn.janto.es/pro/fresh/recursos/img/20241125123940_1732534780.7551headerar.jpg" alt="banner"
+    <div class="hidden flex-col justify-start mt-20 md:flex">
+      <img :src="bonosStore.bonoData?.banner" alt="banner"
         class="mb-10" />
     </div>
     <!-- Imagen para móvil -->
     <div class="flex flex-col justify-start mt-20 md:hidden">
-      <img src="https://cdn.janto.es/pro/fresh/recursos/img/20241125123940_1732534780.7551headerar.jpg" alt="banner"
+      <img :src="bonosStore.bonoData?.banner" alt="banner"
         class="w-full" />
     </div>
   </div>
